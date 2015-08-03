@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8164.2" systemVersion="14E7f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="d3Q-Ib-Rk0">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8135.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--Photo Collection-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="StackViewDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="kLT-Gw-Vtg">
+                                <rect key="frame" x="20" y="74" width="374" height="515"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nature-1" translatesAutoresizingMaskIntoConstraints="NO" id="8rc-h8-mFJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="165"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nature-2" translatesAutoresizingMaskIntoConstraints="NO" id="svL-ri-sUB">
+                                        <rect key="frame" x="0.0" y="175" width="374" height="165"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nature-3" translatesAutoresizingMaskIntoConstraints="NO" id="J7Z-pv-RDk">
+                                        <rect key="frame" x="0.0" y="350" width="374" height="165"/>
+                                    </imageView>
+                                </subviews>
+                                <variation key="heightClass=compact" axis="horizontal"/>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="vyX-FQ-lcG">
+                                <rect key="frame" x="20" y="597" width="374" height="79"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" alignment="firstBaseline" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="HRy-hH-gxo">
+                                        <rect key="frame" x="0.0" y="0.0" width="184.5" height="38"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nature" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sEd-XE-CtB">
+                                                <rect key="frame" x="0.0" y="0.0" width="89.5" height="36"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Zyt-UW-Gk1">
+                                                <rect key="frame" x="109.5" y="8" width="75" height="30"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KnV-0Y-doC">
+                                                        <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                                        <state key="normal" title="Like"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IOM-hP-L4M">
+                                                        <rect key="frame" x="35" y="0.0" width="40" height="30"/>
+                                                        <state key="normal" title="Share"/>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="A collection of nature photos from magdeleine.co" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JQa-aU-B11">
+                                        <rect key="frame" x="0.0" y="38" width="265" height="41"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="vyX-FQ-lcG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="5s2-yS-DmI"/>
+                            <constraint firstItem="kLT-Gw-Vtg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="C26-eo-85a"/>
+                            <constraint firstItem="kLT-Gw-Vtg" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.7" id="e8D-cr-F25"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="kLT-Gw-Vtg" secondAttribute="trailing" id="ffb-yf-MZw"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="vyX-FQ-lcG" secondAttribute="trailing" id="mTH-2u-yJd"/>
+                            <constraint firstItem="kLT-Gw-Vtg" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="qV7-EB-fXL"/>
+                            <constraint firstItem="vyX-FQ-lcG" firstAttribute="top" secondItem="kLT-Gw-Vtg" secondAttribute="bottom" constant="8" id="xRE-br-kTs"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Photo Collection" id="aa1-wm-Gvr"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1030" y="-368"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="oRF-Qd-deV">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="d3Q-Ib-Rk0" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="POm-tC-jT7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="EFt-c8-icT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eM9-2b-OLd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="215" y="-368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="nature-1" width="1000" height="667"/>
+        <image name="nature-2" width="1024" height="678"/>
+        <image name="nature-3" width="1024" height="683"/>
+    </resources>
+</document>
